@@ -1,6 +1,8 @@
 package com.MailTest.demo.controller;
 
 import com.MailTest.demo.service.EmailService;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatusCode;
@@ -12,9 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/sendMail")
 @Slf4j
+@AllArgsConstructor
+@NoArgsConstructor
 public class MailController {
 
-    @Autowired
+
     private  EmailService emailService;
 
     @GetMapping(value = "/email")
