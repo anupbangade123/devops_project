@@ -19,7 +19,7 @@ public class MailController {
 
     @GetMapping(value = "/email")
     public ResponseEntity<String> sendEmail(){
-        log.info("inside sendEmail()");
+        log.info("inside sendEmail() start");
         String text= "Please check Sheet details-  "+"\n\n"+
                 "<table width='100%' border='1' align='center'>"
                 + "<tr align='center'>"
