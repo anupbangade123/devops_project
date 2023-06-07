@@ -1,14 +1,9 @@
 package com.MailTest.demo.service;
 
-import jakarta.mail.MessagingException;
-import jakarta.mail.internet.MimeMessage;
+
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import org.springframework.core.io.InputStreamSource;
-import org.springframework.mail.SimpleMailMessage;
-import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
-import org.springframework.mail.javamail.JavaMailSender;
 
 @Service
 @AllArgsConstructor
@@ -16,7 +11,7 @@ import org.springframework.mail.javamail.JavaMailSender;
 public class EmailService {
 
 
-    private JavaMailSender mailSender;
+ /*   private JavaMailSender mailSender;
 
     public void send(String from, String to, String subject, String text) {
         SimpleMailMessage message = new SimpleMailMessage();
@@ -38,6 +33,6 @@ public class EmailService {
         helper.setText(text, true);
         helper.addAttachment(attachName, inputStream);
         mailSender.send(message);
-    }
+    }*/
 
 }

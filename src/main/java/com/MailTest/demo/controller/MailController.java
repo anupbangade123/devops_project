@@ -1,6 +1,5 @@
 package com.MailTest.demo.controller;
 
-import com.MailTest.demo.service.EmailService;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -18,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MailController {
 
 
-    private  EmailService emailService;
+    //private  EmailService emailService;
 
     @GetMapping(value = "/email")
     public ResponseEntity<String> sendEmail(){
@@ -38,7 +37,7 @@ public class MailController {
                 + "<td><a href=\"https://docs.google.com/spreadsheets/d/1uizYq0YcapB1k_UZX7QA6bC_MRqxZTZe8pS9sApNWIo/edit#gid=2009637454\">IT Sheet  Link </a> </td>"
                 + "</tr>"
                 + "</table>";
-        emailService.send("anupn.bangade@gmail.com", "anup.bangade@gmail.com","Test HTML Mail", text);
+        //emailService.send("anupn.bangade@gmail.com", "anup.bangade@gmail.com","Test HTML Mail", text);
         return new ResponseEntity<>("Send", HttpStatusCode.valueOf(200));
     }
 }
