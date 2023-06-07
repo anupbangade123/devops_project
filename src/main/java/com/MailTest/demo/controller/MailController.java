@@ -1,9 +1,7 @@
 package com.MailTest.demo.controller;
 
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.HttpStatusCode;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -36,6 +34,6 @@ public class MailController {
                 + "</tr>"
                 + "</table>";
         //emailService.send("anupn.bangade@gmail.com", "anup.bangade@gmail.com","Test HTML Mail", text);
-        return new ResponseEntity<>("Send", HttpStatusCode.valueOf(200));
+        return new ResponseEntity<>("Send", HttpStatus.OK);
     }
 }
