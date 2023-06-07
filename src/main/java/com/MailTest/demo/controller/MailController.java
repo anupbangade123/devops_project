@@ -12,8 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/sendMail")
 @Slf4j
-@AllArgsConstructor
-@NoArgsConstructor
 public class MailController {
 
 
