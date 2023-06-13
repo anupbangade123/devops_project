@@ -7,6 +7,7 @@ public class Test {
         int arr[] = {1, 4, 20, 3, 10, 5};
         // sum = 33
         //Output: Sum found between indexes 2 and 4
+        //testing
 int n =33;
         for(int i=0;i<arr.length-1;i++){
             int sum=arr[i];
